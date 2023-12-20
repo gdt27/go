@@ -11,7 +11,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/hello", helloWorld)
 
-	router.Run("localhost:8082")
+	router.Run(":8082")
 }
 
 func helloWorld(c *gin.Context) {
